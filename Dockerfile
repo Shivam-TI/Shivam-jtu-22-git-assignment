@@ -7,8 +7,9 @@ WORKDIR /assignments/docker
 # Expose port 8000 for your FastAPI server.
 EXPOSE 8000
 
-# Install Python requirements using Pip.
-
 # Copy your codebase into the Docker container.
+COPY . .
+
+# Install Python requirements using Pip.
 
 # Run FastAPI server on the port exposed above.
